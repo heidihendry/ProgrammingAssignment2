@@ -1,15 +1,17 @@
-## Put comments here that give an overall description of what your
-## functions do
+## 2 functions. makeCacheMatrix stores the inputted matrix into the parent environment cache. cacheSolve create the inverse of the matrix that was inputted into makeCacheMatrix
 
-## Write a short comment describing this function
+## makeCacheMatrix stores the inputted matrix into the parent environment cache.
 
 makeCacheMatrix <- function(x = matrix()) {
-
+	my_mat<<-x
+	my_mat
 }
 
 
-## Write a short comment describing this function
+## cacheSolve create the inverse of the matrix that was inputted into makeCacheMatrix
 
 cacheSolve <- function(x, ...) {
         ## Return a matrix that is the inverse of 'x'
+	inv_mat<-solve(my_mat)	
+	inv_mat
 }
